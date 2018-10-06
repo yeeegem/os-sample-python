@@ -1,5 +1,5 @@
 from flask import Flask, request, send_from_directory, render_template
-application = Flask(__name__, static_url_path='')
+application = Flask(__name__, static_url_path='', template_folder='template')
 
 @application.route("/")
 def hello():
